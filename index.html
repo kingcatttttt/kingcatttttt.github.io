@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="sort-form">
+        <h3>Sort by</h3>
+        <input type="radio" name="sort" id="id" value="id" checked> Id <br>
+        <input type="radio" name="sort" id="name" value="name"> Name <br>
+        <input type="radio" name="sort" id="hp" value="hp"> HP <br>
+        <input type="radio" name="sort" id="attack" value="attack"> Attack <br>
+        <input type="radio" name="sort" id="defense" value="defense"> Defense <br>
+
+        <h3>Order</h3>
+        <input type="radio" name="order" id="asc" value="asc" checked> From smallest to biggest <br>
+        <input type="radio" name="order" id="desc" value="desc"> From biggest to smallest <br>
+    </form>
+
+    <div id="result"></div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

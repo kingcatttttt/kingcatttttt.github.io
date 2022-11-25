@@ -1,31 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+	<style type="text/css">
+		body{
+        font-size: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+	</style>
 </head>
-
 <body>
-    <form id="sort-form">
-        <h3>Sort by</h3>
-        <input type="radio" name="sort" id="id" value="id" checked> Id <br>
-        <input type="radio" name="sort" id="name" value="name"> Name <br>
-        <input type="radio" name="sort" id="hp" value="hp"> HP <br>
-        <input type="radio" name="sort" id="attack" value="attack"> Attack <br>
-        <input type="radio" name="sort" id="defense" value="defense"> Defense <br>
 
-        <h3>Order</h3>
-        <input type="radio" name="order" id="asc" value="asc" checked> From smallest to biggest <br>
-        <input type="radio" name="order" id="desc" value="desc"> From biggest to smallest <br>
-    </form>
+<span class="clock"> 5 </span>
 
-    <div id="result"></div>
-    
-    <script src="script.js"></script>
+<script type="text/javascript">
+	var t = 5;
+	var time = document.getElementsByClassName("clock")[0];
+ 
+	function fun() {
+		t--;
+		time.innerHTML = t;
+		if(t <= 0) {
+			clearInterval(inter);
+		}
+		setTimeout(() => window.open("https://www.youtube.com/watch?v=nybtOIxlku8", "_self"), 5000)
+	}
+	var inter = setInterval("fun()", 1000);
+</script>
 </body>
-
 </html>
